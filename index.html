@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Custom Price Table</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            border: 3px solid black;
+            width: 600px;
+            margin: auto;
+            padding: 10px;
+            background-color: white;
+        }
+
+        table,th,td{
+
+            border-collapse: collapse;
+        }
+        tr{
+            width: 100%;
+            
+        }
+        th{
+            width: 150px;
+            padding: 8px 5px;
+            /* font-size: 4vh; */
+            border-left: 2px solid whitesmoke;
+            border-right: 2px solid whitesmoke;
+            color: #64548f;
+            line-height: 70px;
+            font-size: 30px;
+            margin-right: 5px;
+        }
+        td{
+            /* border: 3px solid black; */
+            width: 150px;
+            padding: 8px 5px;
+            text-align: center;
+            border-left: 2px solid whitesmoke;
+            border-right: 2px solid whitesmoke;
+            /* font-size: 3vh; */
+        }
+        tr a{
+            text-decoration: none;
+        }
+        tr a div{
+            width: 90%;
+            color:whitesmoke;
+            background-color:#64548f ;
+            margin: auto;
+            padding: 5px 0px;
+            border-radius: 4px;
+            font-size: 3vh;
+        }
+        tr a div:hover{
+            background-color: red;
+        }
+        caption{
+            font-size: 4vh;
+            margin-bottom: 10px;
+        }
+        body{
+            background-color: lightgrey;
+        }
+        .basic{
+            background-color: #c1dcb7;
+        }
+        .plus{
+            background-color: #bad6c8;
+        }
+        .deluxe{
+            background-color: #bbd3dc;
+        }
+        .pro{
+            background-color: #d5e4bc;
+        }
+        tbody tr:nth-child(odd){
+            background-color: #edf3e2;
+        }
+        tbody tr:first-child td{
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <caption>Select Your Plan</caption>
+            <thead>
+                <colgroup class="basic"></colgroup>
+                <colgroup class="plus"></colgroup>
+                <colgroup class="deluxe"></colgroup>
+                <colgroup class="pro"></colgroup>
+                <tr>
+                    <th style="background-color:#c1dcb7 ;"><i class="fa fa-building"></i>Basic</th>
+                    <th style="background-color:#bad6c8 ;"><i class="fa fa-superpowers"></i>Plus</th>
+                    <th style="background-color:#bbd3dc ;"><i class="fa fa-telegram"></i>Deluxe</th>
+                    <th style="background-color: #d5e4bc;"><i class="fa fa-tachometer"></i>Pro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rs 500/-</td>
+                    <td>Rs 1500/-</td>
+                    <td>Rs 2500/-</td>
+                    <td>Rs 3500/-</td>
+                </tr>
+                <tr>
+                    <td>53 Pages</td>
+                    <td>75 Pages</td>
+                    <td>Unlimited</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>3 Users</td>
+                    <td>5 Users</td>
+                    <td>10 Users</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>10 sites</td>
+                    <td>25 sites</td>
+                    <td>100 sites</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>50 MB</td>
+                    <td>250 MB</td>
+                    <td>1 GB</td>
+                    <td>5 GB</td>
+                </tr>
+                <tr>
+                    <td>Included</td>
+                    <td>Included</td>
+                    <td>Included</td>
+                    <td>Included</td>
+                </tr>
+                <tr>
+                    <td><img src="check.png" alt=""></td>
+                    <td><img src="check.png" alt=""></td>
+                    <td><img src="check.png" alt=""></td>
+                    <td><img src="check.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="x.png" alt=""></td>
+                    <td><img src="check.png" alt=""></td>
+                    <td><img src="check.png" alt=""></td>
+                    <td><img src="check.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="x.png" alt=""></td>
+                    <td><img src="check.png" alt=""></td>
+                    <td><img src="check.png" alt=""></td>
+                    <td><img src="check.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="x.png" alt=""></td>
+                    <td><img src="x.png" alt=""></td>
+                    <td><img src="check.png" alt=""></td>
+                    <td><img src="check.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="x.png" alt=""></td>
+                    <td><img src="x.png" alt=""></td>
+                    <td><img src="x.png" alt=""></td>
+                    <td><img src="check.png" alt=""></td>
+                </tr>
+               <tfoot>
+                <tr>
+                    <td><a href=""><div>Sign Up</div></a></td>
+                    <td><a href=""><div>Sign Up</div></a></td>
+                    <td><a href=""><div>Sign Up</div></a></td>
+                    <td><a href=""><div>Sign Up</div></a></td>
+                </tr>
+               </tfoot>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
